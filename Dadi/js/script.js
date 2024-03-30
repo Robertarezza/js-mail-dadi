@@ -19,20 +19,15 @@ sendBtnElem.addEventListener("click", function () {
     let result = "";
     if (numberPc == numberUt) {
         result = 0;
-
+        document.getElementById("msg").innerHTML = "Riprova";
     } else if (numberPc < numberUt) {
         result = 1
-
+        document.getElementById("msg").innerHTML = "Complimenti, hai vinto!!!";
     } else if (numberPc > numberUt) {
         result = 2;
-    }
-
-
-    if (result == 0) {
-        document.getElementById("msg").innerHTML = "Riprova";
-    } else if (result == 1) {
-        document.getElementById("msg").innerHTML = "Complimenti, hai vinto!!!";
-    } else if (result == 2) {
         document.getElementById("msg").innerHTML = "Hai perso, ritenta sarai più fortunato";
     }
+
+
+    
 })
