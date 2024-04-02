@@ -29,13 +29,14 @@ let trovato= false
     if (isNaN(mailInputElem) === true) {
 
         //ciclo
-        for (let i = 0; i <= mail.length; i++) {
+        for (let i = 0; i < mail.length; i++) {
             //console.log(i);
             //condizioni
             if (mailInputElem == mail[i]) {
                 trovato = true
                 //stampa 
             }
+        break; //fine dell'interazione
         }
         
         if(trovato == true){
