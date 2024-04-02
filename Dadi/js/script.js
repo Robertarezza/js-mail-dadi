@@ -18,16 +18,15 @@ sendBtnElem.addEventListener("click", function () {
 
     let result = "";
     if (numberPc == numberUt) {
-        result = 0;
-        document.getElementById("msg").innerHTML = "Riprova";
+        result = "riprova";
+       
     } else if (numberPc < numberUt) {
-        result = 1
-        document.getElementById("msg").innerHTML = "Complimenti, hai vinto!!!";
+        result = "hai vinto"
+        
     } else if (numberPc > numberUt) {
-        result = 2;
-        document.getElementById("msg").innerHTML = "Hai perso, ritenta sarai più fortunato";
+        result = "hai perso";
+        
     }
 
-
-    
+    document.getElementById("msg").innerHTML = result;
 })

@@ -9,13 +9,15 @@ console.log(sendBtnElem);
 //const userMail= prompt("Qual'è la tua mail?"); //string | null
 //console.log(userMail, typeof userMail);
 
+
+//array
 const mail = ["pippo@live.it", "peppe@gmail.com", "roberta.rezza@gmail.com"]
 
 
 //evento
 sendBtnElem.addEventListener("click", function () {
 
-    //lista arrey    
+
 
 
     //input
