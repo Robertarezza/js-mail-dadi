@@ -35,8 +35,9 @@ let trovato= false
             if (mailInputElem == mail[i]) {
                 trovato = true
                 //stampa 
+                break;
             }
-        break; //fine dell'interazione
+         //fine dell'interazione
         }
         
         if(trovato == true){

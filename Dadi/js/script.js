@@ -19,14 +19,16 @@ sendBtnElem.addEventListener("click", function () {
     let result = "";
     if (numberPc == numberUt) {
         result = "riprova";
-       
+
     } else if (numberPc < numberUt) {
         result = "hai vinto"
-        
+
     } else if (numberPc > numberUt) {
         result = "hai perso";
-        
     }
 
     document.getElementById("msg").innerHTML = result;
 })
+
+
+
